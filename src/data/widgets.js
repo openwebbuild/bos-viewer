@@ -1,11 +1,10 @@
-const TestnetDomains = {
-  "test.near.org": true,
-  "127.0.0.1": true,
-  localhost: true,
+const MainnetDomains = {
+  "beta.openweb.build": true,
+  "openweb.build": true,
 };
 
 export const NetworkId =
-  window.location.hostname in TestnetDomains ? "testnet" : "mainnet";
+  window.location.hostname in MainnetDomains ? "mainnet" : "testnet";
 export const signInContractId =
   NetworkId === "testnet" ? "v1.social08.testnet" : "social.near";
 
