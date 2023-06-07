@@ -8,8 +8,6 @@ export const NetworkId =
 export const signInContractId =
   NetworkId === "testnet" ? "v1.social08.testnet" : "social.near";
 
-console.log("current network", window.location.hostname, MainnetDomains, NetworkId, signInContractId);
-
 export const networks = {
   mainnet: {
     networkId: "mainnet",
