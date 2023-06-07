@@ -76,7 +76,7 @@ export const onboard = init({
     {
       id: 1442,
       token: "ETH",
-      label: "Polygon zkEVM (testnet)",
+      label: "Polygon zkEVM Testnet",
       rpcUrl: "https://rpc.public.zkevm-test.net",
     },
   ],
