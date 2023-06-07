@@ -73,6 +73,12 @@ export const onboard = init({
       label: "Arbitrum One Mainnet",
       rpcUrl: "https://endpoints.omniatech.io/v1/arbitrum/one/public",
     },
+    {
+      id: 1442,
+      token: "ETH",
+      label: "Polygon zkEVM (testnet)",
+      rpcUrl: "https://rpc.public.zkevm-test.net",
+    },
   ],
   appMetadata: {
     name: "NEAR",
