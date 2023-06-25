@@ -16,6 +16,7 @@ import NearLogotype from '../icons/near-logotype.svg';
 import ReturnIconImage from '../icons/return.svg';
 import SearchIconImage from '../icons/search.svg';
 import { NotificationButton } from '../NotificationButton';
+import { WritePostButton } from '../WritePostButton';
 import { MainNavigationMenu } from './MainNavigationMenu';
 import { TypeAheadDropdown } from './TypeAheadDropdown';
 import { UserDropdownMenu } from './UserDropdownMenu';
@@ -222,6 +223,7 @@ export const DesktopNavigation = () => {
           )}
           {signedIn && (
             <>
+              <WritePostButton />
               <NotificationButton />
               <UserDropdownMenu />
             </>

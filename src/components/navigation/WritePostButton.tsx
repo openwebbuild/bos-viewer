@@ -4,8 +4,8 @@ import styled from 'styled-components';
 import { VmComponent } from '@/components/vm/VmComponent';
 import { useBosComponents } from '@/hooks/useBosComponents';
 
-const StyledNotificationButton = styled.div`
-  margin: 0 10px;
+const StyledWritePostButton = styled.div`
+  margin: 0 0 0 10px;
   border: 0.5px solid #e3e3e0;
   background-color: #f3f3f2;
   height: 46px;
@@ -24,26 +24,24 @@ const StyledNotificationButton = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
 
     i {
       font-size: 18px !important;
     }
   }
 
-  :hover {
-    a,
-    i {
-      color: white;
-    }
+  button {
+    border-width: 0;
   }
 `;
 
-export function NotificationButton() {
+export function WritePostButton() {
   const components = useBosComponents();
 
   return (
-    <StyledNotificationButton className="nav-notification-button">
-      <VmComponent src={components.notificationButton} />
-    </StyledNotificationButton>
+    <StyledWritePostButton className="nav-notification-button">
+      <VmComponent src={components.writePostButton} />
+    </StyledWritePostButton>
   );
 }
