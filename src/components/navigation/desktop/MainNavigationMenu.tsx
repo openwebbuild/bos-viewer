@@ -476,17 +476,17 @@ export const MainNavigationMenu = () => {
             </NavigationMenu.Trigger>
             <NavigationMenu.Content className="NavigationMenuContent">
               <ul className="List two">
-                <ListItem title={navLinkData.about.title} route={navLinkData.about.link}>
-                  <i className="ph-duotone ph-info"></i>
-                  {navLinkData.about.description}
+                <ListItem title={navLinkData.learn.title} route={navLinkData.learn.link}>
+                  <i className="ph-duotone ph-books"></i>
+                  {navLinkData.learn.description}
+                </ListItem>
+                <ListItem title={navLinkData.write.title} route={navLinkData.write.link}>
+                  <i className="ph-duotone ph-pen-nib"></i>
+                  {navLinkData.write.description}
                 </ListItem>
                 <ListItem title={navLinkData.news.title} route={navLinkData.news.link}>
                   <i className="ph-duotone ph-newspaper"></i>
                   {navLinkData.news.description}
-                </ListItem>
-                <ListItem title={navLinkData.learn.title} route={navLinkData.learn.link}>
-                  <i className="ph-duotone ph-books"></i>
-                  {navLinkData.learn.description}
                 </ListItem>
               </ul>
             </NavigationMenu.Content>

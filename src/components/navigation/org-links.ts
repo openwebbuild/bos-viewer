@@ -59,6 +59,11 @@ export const navLinkData = {
     description: 'Experience how easy it is to get started in Web3',
     link: '/use',
   },
+  write: {
+    title: 'Write',
+    description: 'Share your ideas, insights and solutions with the community',
+    link: '/write',
+  },
   about: {
     title: 'About',
     description: 'Learn more about NEAR’s journey and vision for the decentralized web',
