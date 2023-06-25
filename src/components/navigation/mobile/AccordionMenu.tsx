@@ -297,9 +297,9 @@ export const AccordionMenu = () => (
               <i className="ph-duotone ph-info"></i>
               {navLinkData.about.description}
             </ListItem>
-            <ListItem title={navLinkData.news.title} route={navLinkData.news.link}>
+            <ListItem title={navLinkData.blog.title} route={navLinkData.blog.link}>
               <i className="ph-duotone ph-newspaper"></i>
-              {navLinkData.news.description}
+              {navLinkData.blog.description}
             </ListItem>
             <ListItem title={navLinkData.learn.title} route={navLinkData.learn.link}>
               <i className="ph-duotone ph-books"></i>
