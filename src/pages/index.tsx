@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import styled from 'styled-components';
 
 import { MetaTags } from '@/components/MetaTags';
 import { ComponentWrapperPage } from '@/components/near-org/ComponentWrapperPage';
@@ -8,6 +9,12 @@ import { useDefaultLayout } from '@/hooks/useLayout';
 import { useAuthStore } from '@/stores/auth';
 import { useCurrentComponentStore } from '@/stores/current-component';
 import type { NextPageWithLayout } from '@/utils/types';
+
+const Wrapper = styled.div`
+  @media (min-width: 600px) {
+    margin: 0 80px;
+  }
+`;
 
 const HomePage: NextPageWithLayout = () => {
   const signedIn = useAuthStore((store) => store.signedIn);
@@ -21,7 +28,9 @@ const HomePage: NextPageWithLayout = () => {
   }, [signedIn, setComponentSrc]);
 
   if (signedIn) {
-    return <ComponentWrapperPage src={components.default} />;
+    return <Wrapper>
+      <ComponentWrapperPage src={components.default} />
+    </Wrapper>;
   }
 
   return (

@@ -69,9 +69,9 @@ export const navLinkData = {
     description: 'Learn more about NEAR’s journey and vision for the decentralized web',
     link: '/about',
   },
-  news: {
-    title: 'News',
-    description: 'Stay up to date on all things NEAR',
+  blog: {
+    title: 'Read',
+    description: 'Read tutorials, writings and sharing by others',
     link: '/blog',
   },
   learn: {

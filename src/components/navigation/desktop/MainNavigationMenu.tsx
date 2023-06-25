@@ -472,7 +472,7 @@ export const MainNavigationMenu = () => {
 
           <NavigationMenu.Item>
             <NavigationMenu.Trigger className="NavigationMenuTrigger" onMouseEnter={recordMouseEnter}>
-              More
+              Community
             </NavigationMenu.Trigger>
             <NavigationMenu.Content className="NavigationMenuContent">
               <ul className="List two">
@@ -484,9 +484,9 @@ export const MainNavigationMenu = () => {
                   <i className="ph-duotone ph-pen-nib"></i>
                   {navLinkData.write.description}
                 </ListItem>
-                <ListItem title={navLinkData.news.title} route={navLinkData.news.link}>
+                <ListItem title={navLinkData.blog.title} route={navLinkData.blog.link}>
                   <i className="ph-duotone ph-newspaper"></i>
-                  {navLinkData.news.description}
+                  {navLinkData.blog.description}
                 </ListItem>
               </ul>
             </NavigationMenu.Content>

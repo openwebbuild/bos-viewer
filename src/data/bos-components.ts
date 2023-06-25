@@ -1,6 +1,7 @@
 import type { NetworkId } from '@/utils/types';
 
 type NetworkComponents = {
+  blogPage: string;
   bosDirectory: string;
   componentSummary: string;
   componentsPage: string;
@@ -43,10 +44,11 @@ type NetworkComponents = {
 export const componentsByNetworkId: Record<NetworkId, NetworkComponents | undefined> = {
   // localnet: undefined,
   testnet: {
+    blogPage: 'openwebbuild.testnet/widget/Page.Posts',
     bosDirectory: 'one.testnet/widget/BOSDirectory',
     componentSummary: 'one.testnet/widget/ComponentSummary',
     componentsPage: 'one.testnet/widget/ComponentsPage',
-    default: 'one.testnet/widget/ActivityPage',
+    default: 'openwebbuild.testnet/widget/Page.Explore',
     editorComponentSearch: 'one.testnet/widget/Editor.ComponentSearch',
     horizon: {
       homePage: 'nearhorizon.near/widget/HomePage',
@@ -83,10 +85,11 @@ export const componentsByNetworkId: Record<NetworkId, NetworkComponents | undefi
   },
 
   mainnet: {
+    blogPage: 'openwebbuild.near/widget/Page.Posts',
     bosDirectory: 'onboarder.near/widget/BOSDirectory',
     componentSummary: 'near/widget/ComponentSummary',
     componentsPage: 'near/widget/ComponentsPage',
-    default: 'near/widget/ActivityPage',
+    default: 'openwebbuild.near/widget/Page.Explore',
     editorComponentSearch: 'mob.near/widget/Editor.ComponentSearch',
     horizon: {
       homePage: 'nearhorizon.near/widget/HomePage',

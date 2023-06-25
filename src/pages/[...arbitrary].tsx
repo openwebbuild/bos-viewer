@@ -4,7 +4,7 @@ export const runtime = 'experimental-edge';
 // e.g. /about/contact-us, /papers/nightshade
 const extendableRoutes: Record<string, string> = {
   about: 'https://pages.near.org/about',
-  blog: 'https://pages.near.org/blog',
+  // blog: 'https://pages.near.org/blog',
   developers: 'https://pages.near.org/developers',
   learn: 'https://pages.near.org/learn',
   papers: 'https://pages.near.org/papers',
