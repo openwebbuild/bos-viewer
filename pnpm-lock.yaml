@@ -102,7 +102,7 @@ dependencies:
   local-storage: 2.0.0
   lodash: 4.17.21
   near-api-js: 2.1.3
-  near-social-vm: github.com/openwebbuild/bos-vm/8a7727f6a9c1a9a97e04e001de7ab914888cafac_jeq36immix6xrihwp6slcsymr4
+  near-social-vm: github.com/openwebbuild/bos-vm/5bf83092a87fb4a4bafea07585114984b4f809c3_jeq36immix6xrihwp6slcsymr4
   next: 13.3.4_biqbaboplfbrettd7655fr4n2y
   prettier: 2.8.8
   react: 18.2.0
@@ -10547,9 +10547,9 @@ packages:
     resolution: {integrity: sha512-bXE4cR/kVZhKZX/RjPEflHaKVhUVl85noU3v6b8apfQEc1x4A+zBxjZ4lN8LqGd6WZ3dl98pY4o717VFmoPp+A==}
     dev: false
 
-  github.com/openwebbuild/bos-vm/8a7727f6a9c1a9a97e04e001de7ab914888cafac_jeq36immix6xrihwp6slcsymr4:
-    resolution: {tarball: https://codeload.github.com/openwebbuild/bos-vm/tar.gz/8a7727f6a9c1a9a97e04e001de7ab914888cafac}
-    id: github.com/openwebbuild/bos-vm/8a7727f6a9c1a9a97e04e001de7ab914888cafac
+  github.com/openwebbuild/bos-vm/5bf83092a87fb4a4bafea07585114984b4f809c3_jeq36immix6xrihwp6slcsymr4:
+    resolution: {tarball: https://codeload.github.com/openwebbuild/bos-vm/tar.gz/5bf83092a87fb4a4bafea07585114984b4f809c3}
+    id: github.com/openwebbuild/bos-vm/5bf83092a87fb4a4bafea07585114984b4f809c3
     name: near-social-vm
     version: 2.2.3
     peerDependencies:
