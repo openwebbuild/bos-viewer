@@ -69,7 +69,7 @@ export const componentsByNetworkId: Record<NetworkId, NetworkComponents | undefi
     profileImage: 'eugenethedream/widget/ProfileImage',
     profileInlineBlock: 'eugenethedream/widget/Profile.InlineBlock',
     profileName: 'eugenethedream/widget/ProfileName',
-    profilePage: 'openwebbuild.testnet/widget/Profile',
+    profilePage: 'openwebbuild.testnet/widget/Page.Profile',
     search: {
       indexPage: 'one.testnet/widget/Search.IndexPage',
       typeAheadDropdown: 'one.testnet/widget/Search.TypeAheadDropdown',
@@ -110,7 +110,7 @@ export const componentsByNetworkId: Record<NetworkId, NetworkComponents | undefi
     profileImage: 'mob.near/widget/ProfileImage',
     profileInlineBlock: 'mob.near/widget/Profile.InlineBlock',
     profileName: 'patrick.near/widget/ProfileName',
-    profilePage: 'openwebbuild.near/widget/ProfilePage',
+    profilePage: 'openwebbuild.near/widget/Page.Profile',
     search: {
       indexPage: 'near/widget/Search.IndexPage',
       typeAheadDropdown: 'near/widget/Search.TypeAheadDropdown',
