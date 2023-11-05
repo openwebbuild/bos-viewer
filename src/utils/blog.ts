@@ -27,6 +27,21 @@ const QUERY_POST = `
   }
 `;
 
+function parseImageUrl(image: Record<string, string>) {
+  if (image) {
+    return image.url ?? (image.ipfs_cid ? `${IPFS_ENDPOINT}/${image.ipfs_cid}` : null);
+  }
+  return null;
+}
+
+function parseDescription(text: string) {
+  if (text) {
+    const body = text.split("\n").slice(1).join("\n");
+    return body.slice(0, 140);
+  }
+  return "";
+}
+
 export async function queryPost(accountId: string, permalink: string) {
   const result = await fetchGraphQL(
     QUERY_POST,
@@ -50,15 +65,10 @@ export async function queryPost(accountId: string, permalink: string) {
         const p = posts[0];
         const content = JSON.parse(p.content ?? null) as Record<string, string | any>;
         if (content) {
-          let imageUrl = null;
-          const image = content.image;
-          if (image) {
-            imageUrl = image.url ?? (image.ipfs_cid ? `${IPFS_ENDPOINT}/${image.ipfs_cid}` : null);
-          }
           return {
             title: content.title ?? null,
-            description: content.text?.slice(0, 80) ?? null,
-            imageUrl,
+            description: parseDescription(content.text),
+            imageUrl: parseImageUrl(content.image),
           }
         }
       }
