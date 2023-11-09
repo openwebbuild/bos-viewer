@@ -1,3 +1,5 @@
+import { extractHeadImage, extractPostSummary } from "./markdown";
+
 const GRAPHQL_ENDPOINT = "https://near-queryapi.api.pagoda.co";
 const IPFS_ENDPOINT = "https://ipfs.near.social/ipfs";
 
@@ -27,17 +29,17 @@ const QUERY_POST = `
   }
 `;
 
-function parseImageUrl(image: Record<string, string>) {
+async function parseImageUrl(image: Record<string, string>, text: string) {
   if (image) {
     return image.url ?? (image.ipfs_cid ? `${IPFS_ENDPOINT}/${image.ipfs_cid}` : null);
+  } else {
+    return await extractHeadImage(text);
   }
-  return null;
 }
 
-function parseDescription(text: string) {
+async function parseDescription(text: string) {
   if (text) {
-    const body = text.split("\n").slice(1).join("\n");
-    return body.slice(0, 140);
+    return await extractPostSummary(text);
   }
   return "";
 }
@@ -67,8 +69,8 @@ export async function queryPost(accountId: string, permalink: string) {
         if (content) {
           return {
             title: content.title ?? null,
-            description: parseDescription(content.text),
-            imageUrl: parseImageUrl(content.image),
+            description: await parseDescription(content.text),
+            imageUrl: await parseImageUrl(content.image, content.text),
           }
         }
       }

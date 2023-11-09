@@ -56,8 +56,10 @@ specifiers:
   react-dom: 18.2.0
   react-hook-form: ^7.43.9
   react-singleton-hook: ^3.1.1
+  remark-parse: 10.0.2
   styled-components: ^5.3.6
   typescript: 5.0.4
+  unified: 10.1.2
   zustand: ^4.3.7
 
 dependencies:
@@ -109,8 +111,10 @@ dependencies:
   react-dom: 18.2.0_react@18.2.0
   react-hook-form: 7.43.9_react@18.2.0
   react-singleton-hook: 3.4.0_biqbaboplfbrettd7655fr4n2y
+  remark-parse: 10.0.2
   styled-components: 5.3.10_biqbaboplfbrettd7655fr4n2y
   typescript: 5.0.4
+  unified: 10.1.2
   zustand: 4.3.8_react@18.2.0
 
 devDependencies:
