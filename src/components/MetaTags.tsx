@@ -36,6 +36,7 @@ export function MetaTags(props: Meta) {
       <meta property="twitter:title" content={title}></meta>
       <meta property="twitter:description" content={desc}></meta>
       <meta property="twitter:image" content={image}></meta>
+      <meta property="twitter:image:src" content={image}></meta>
     </Head>
   );
 }
